@@ -1,0 +1,118 @@
+{
+  "info": {
+    "name": "Employee Management System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" }
+  ],
+  "item": [
+    {
+      "name": "Department",
+      "item": [
+        {
+          "name": "Add Department",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\": \"Engineering\",\n  \"description\": \"Handles product engineering\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/departments", "host": ["{{baseUrl}}"], "path": ["api", "departments"] }
+          }
+        },
+        {
+          "name": "Get All Departments",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/api/departments", "host": ["{{baseUrl}}"], "path": ["api", "departments"] }
+          }
+        },
+        {
+          "name": "Get Department By Id",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/api/departments/1", "host": ["{{baseUrl}}"], "path": ["api", "departments", "1"] }
+          }
+        },
+        {
+          "name": "Update Department",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\": \"Engineering\",\n  \"description\": \"Handles product engineering and QA\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/departments/1", "host": ["{{baseUrl}}"], "path": ["api", "departments", "1"] }
+          }
+        },
+        {
+          "name": "Delete Department",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}/api/departments/1", "host": ["{{baseUrl}}"], "path": ["api", "departments", "1"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Employee",
+      "item": [
+        {
+          "name": "Add Employee",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"phoneNumber\": \"9876543210\",\n  \"designation\": \"Software Engineer\",\n  \"salary\": 55000,\n  \"dateOfJoining\": \"2024-01-15\",\n  \"departmentId\": 1\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/employees", "host": ["{{baseUrl}}"], "path": ["api", "employees"] }
+          }
+        },
+        {
+          "name": "Get All Employees",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/api/employees", "host": ["{{baseUrl}}"], "path": ["api", "employees"] }
+          }
+        },
+        {
+          "name": "Get Employee By Id",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/api/employees/1", "host": ["{{baseUrl}}"], "path": ["api", "employees", "1"] }
+          }
+        },
+        {
+          "name": "Get Employees By Department",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{baseUrl}}/api/employees/department/1", "host": ["{{baseUrl}}"], "path": ["api", "employees", "department", "1"] }
+          }
+        },
+        {
+          "name": "Update Employee",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"phoneNumber\": \"9876543210\",\n  \"designation\": \"Senior Software Engineer\",\n  \"salary\": 65000,\n  \"dateOfJoining\": \"2024-01-15\",\n  \"departmentId\": 1\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/employees/1", "host": ["{{baseUrl}}"], "path": ["api", "employees", "1"] }
+          }
+        },
+        {
+          "name": "Delete Employee",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "{{baseUrl}}/api/employees/1", "host": ["{{baseUrl}}"], "path": ["api", "employees", "1"] }
+          }
+        }
+      ]
+    }
+  ]
+}

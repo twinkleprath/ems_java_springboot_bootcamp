@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:ems_test_db;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
+app:
+  file:
+    upload-dir: target/test-uploads/profile-pictures

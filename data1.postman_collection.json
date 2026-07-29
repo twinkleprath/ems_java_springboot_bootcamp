@@ -1,0 +1,351 @@
+{
+  "info": {
+    "name": "Employee Management System - Sample Data",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "Departments",
+      "item": [
+        {
+          "name": "Add IT",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\":\"IT\",\n  \"description\":\"Handles software development and infrastructure\"\n}"
+            },
+            "url": "{{baseUrl}}/api/departments"
+          }
+        },
+        {
+          "name": "Add Accounts",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\":\"Accounts\",\n  \"description\":\"Handles finance and accounting\"\n}"
+            },
+            "url": "{{baseUrl}}/api/departments"
+          }
+        },
+        {
+          "name": "Add QA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\":\"QA\",\n  \"description\":\"Quality Assurance Department\"\n}"
+            },
+            "url": "{{baseUrl}}/api/departments"
+          }
+        },
+        {
+          "name": "Add Sales",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\":\"Sales\",\n  \"description\":\"Sales Department\"\n}"
+            },
+            "url": "{{baseUrl}}/api/departments"
+          }
+        },
+        {
+          "name": "Add Marketing",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"departmentName\":\"Marketing\",\n  \"description\":\"Marketing Department\"\n}"
+            },
+            "url": "{{baseUrl}}/api/departments"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Employees",
+      "item": [
+        {
+          "name": "Add Employee 1",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\",\"phoneNumber\":\"9876543201\",\"designation\":\"Software Engineer\",\"salary\":55000,\"dateOfJoining\":\"2024-01-10\",\"departmentId\":1 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 2",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Priya\",\"lastName\":\"Sharma\",\"email\":\"priya.sharma@example.com\",\"phoneNumber\":\"9876543202\",\"designation\":\"Frontend Developer\",\"salary\":60000,\"dateOfJoining\":\"2024-02-15\",\"departmentId\":1 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 3",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Rahul\",\"lastName\":\"Patel\",\"email\":\"rahul.patel@example.com\",\"phoneNumber\":\"9876543203\",\"designation\":\"Backend Developer\",\"salary\":65000,\"dateOfJoining\":\"2023-12-01\",\"departmentId\":1 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 4",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Sneha\",\"lastName\":\"Reddy\",\"email\":\"sneha.reddy@example.com\",\"phoneNumber\":\"9876543204\",\"designation\":\"DevOps Engineer\",\"salary\":70000,\"dateOfJoining\":\"2024-03-20\",\"departmentId\":1 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 5",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Amit\",\"lastName\":\"Verma\",\"email\":\"amit.verma@example.com\",\"phoneNumber\":\"9876543205\",\"designation\":\"Accountant\",\"salary\":45000,\"dateOfJoining\":\"2023-08-10\",\"departmentId\":2 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 6",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Neha\",\"lastName\":\"Gupta\",\"email\":\"neha.gupta@example.com\",\"phoneNumber\":\"9876543206\",\"designation\":\"Senior Accountant\",\"salary\":52000,\"dateOfJoining\":\"2022-09-05\",\"departmentId\":2 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 7",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Rakesh\",\"lastName\":\"Mishra\",\"email\":\"rakesh.mishra@example.com\",\"phoneNumber\":\"9876543207\",\"designation\":\"Finance Executive\",\"salary\":50000,\"dateOfJoining\":\"2024-01-18\",\"departmentId\":2 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 8",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Anjali\",\"lastName\":\"Sinha\",\"email\":\"anjali.sinha@example.com\",\"phoneNumber\":\"9876543208\",\"designation\":\"Billing Executive\",\"salary\":43000,\"dateOfJoining\":\"2023-11-22\",\"departmentId\":2 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        }
+      ,
+        {
+          "name": "Add Employee 9",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Karan\",\"lastName\":\"Singh\",\"email\":\"karan.singh@example.com\",\"phoneNumber\":\"9876543209\",\"designation\":\"QA Engineer\",\"salary\":48000,\"dateOfJoining\":\"2024-02-12\",\"departmentId\":3 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 10",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Pooja\",\"lastName\":\"Nair\",\"email\":\"pooja.nair@example.com\",\"phoneNumber\":\"9876543210\",\"designation\":\"Automation Tester\",\"salary\":60000,\"dateOfJoining\":\"2023-07-14\",\"departmentId\":3 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 11",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Vikram\",\"lastName\":\"Joshi\",\"email\":\"vikram.joshi@example.com\",\"phoneNumber\":\"9876543211\",\"designation\":\"Manual Tester\",\"salary\":47000,\"dateOfJoining\":\"2024-04-05\",\"departmentId\":3 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 12",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Divya\",\"lastName\":\"Kapoor\",\"email\":\"divya.kapoor@example.com\",\"phoneNumber\":\"9876543212\",\"designation\":\"QA Lead\",\"salary\":78000,\"dateOfJoining\":\"2022-06-18\",\"departmentId\":3 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 13",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Arjun\",\"lastName\":\"Yadav\",\"email\":\"arjun.yadav@example.com\",\"phoneNumber\":\"9876543213\",\"designation\":\"Sales Executive\",\"salary\":40000,\"dateOfJoining\":\"2024-03-10\",\"departmentId\":4 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 14",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Meera\",\"lastName\":\"Iyer\",\"email\":\"meera.iyer@example.com\",\"phoneNumber\":\"9876543214\",\"designation\":\"Sales Manager\",\"salary\":85000,\"dateOfJoining\":\"2021-09-09\",\"departmentId\":4 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 15",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Sanjay\",\"lastName\":\"Kumar\",\"email\":\"sanjay.kumar@example.com\",\"phoneNumber\":\"9876543215\",\"designation\":\"Business Development Executive\",\"salary\":50000,\"dateOfJoining\":\"2023-10-30\",\"departmentId\":4 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 16",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Nikita\",\"lastName\":\"Roy\",\"email\":\"nikita.roy@example.com\",\"phoneNumber\":\"9876543216\",\"designation\":\"Sales Coordinator\",\"salary\":45000,\"dateOfJoining\":\"2024-05-01\",\"departmentId\":4 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 17",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Rohan\",\"lastName\":\"Das\",\"email\":\"rohan.das@example.com\",\"phoneNumber\":\"9876543217\",\"designation\":\"Marketing Executive\",\"salary\":48000,\"dateOfJoining\":\"2023-12-20\",\"departmentId\":5 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 18",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Simran\",\"lastName\":\"Kaur\",\"email\":\"simran.kaur@example.com\",\"phoneNumber\":\"9876543218\",\"designation\":\"Digital Marketing Specialist\",\"salary\":62000,\"dateOfJoining\":\"2024-01-28\",\"departmentId\":5 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 19",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Aditya\",\"lastName\":\"Mehta\",\"email\":\"aditya.mehta@example.com\",\"phoneNumber\":\"9876543219\",\"designation\":\"SEO Specialist\",\"salary\":55000,\"dateOfJoining\":\"2023-09-11\",\"departmentId\":5 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        },
+        {
+          "name": "Add Employee 20",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"firstName\":\"Kavya\",\"lastName\":\"Menon\",\"email\":\"kavya.menon@example.com\",\"phoneNumber\":\"9876543220\",\"designation\":\"Marketing Manager\",\"salary\":90000,\"dateOfJoining\":\"2022-05-15\",\"departmentId\":5 }"
+            },
+            "url": "{{baseUrl}}/api/employees"
+          }
+        }
+
+      ]
+    }
+  ]
+}

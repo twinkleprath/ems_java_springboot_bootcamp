@@ -1,0 +1,145 @@
+
+{
+"name": "Add Employee 9",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Karan\",\"lastName\":\"Singh\",\"email\":\"karan.singh@example.com\",\"phoneNumber\":\"9876543209\",\"designation\":\"QA Engineer\",\"salary\":48000,\"dateOfJoining\":\"2024-02-12\",\"departmentId\":3 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 10",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Pooja\",\"lastName\":\"Nair\",\"email\":\"pooja.nair@example.com\",\"phoneNumber\":\"9876543210\",\"designation\":\"Automation Tester\",\"salary\":60000,\"dateOfJoining\":\"2023-07-14\",\"departmentId\":3 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 11",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Vikram\",\"lastName\":\"Joshi\",\"email\":\"vikram.joshi@example.com\",\"phoneNumber\":\"9876543211\",\"designation\":\"Manual Tester\",\"salary\":47000,\"dateOfJoining\":\"2024-04-05\",\"departmentId\":3 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 12",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Divya\",\"lastName\":\"Kapoor\",\"email\":\"divya.kapoor@example.com\",\"phoneNumber\":\"9876543212\",\"designation\":\"QA Lead\",\"salary\":78000,\"dateOfJoining\":\"2022-06-18\",\"departmentId\":3 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 13",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Arjun\",\"lastName\":\"Yadav\",\"email\":\"arjun.yadav@example.com\",\"phoneNumber\":\"9876543213\",\"designation\":\"Sales Executive\",\"salary\":40000,\"dateOfJoining\":\"2024-03-10\",\"departmentId\":4 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 14",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Meera\",\"lastName\":\"Iyer\",\"email\":\"meera.iyer@example.com\",\"phoneNumber\":\"9876543214\",\"designation\":\"Sales Manager\",\"salary\":85000,\"dateOfJoining\":\"2021-09-09\",\"departmentId\":4 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 15",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Sanjay\",\"lastName\":\"Kumar\",\"email\":\"sanjay.kumar@example.com\",\"phoneNumber\":\"9876543215\",\"designation\":\"Business Development Executive\",\"salary\":50000,\"dateOfJoining\":\"2023-10-30\",\"departmentId\":4 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 16",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Nikita\",\"lastName\":\"Roy\",\"email\":\"nikita.roy@example.com\",\"phoneNumber\":\"9876543216\",\"designation\":\"Sales Coordinator\",\"salary\":45000,\"dateOfJoining\":\"2024-05-01\",\"departmentId\":4 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 17",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Rohan\",\"lastName\":\"Das\",\"email\":\"rohan.das@example.com\",\"phoneNumber\":\"9876543217\",\"designation\":\"Marketing Executive\",\"salary\":48000,\"dateOfJoining\":\"2023-12-20\",\"departmentId\":5 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 18",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Simran\",\"lastName\":\"Kaur\",\"email\":\"simran.kaur@example.com\",\"phoneNumber\":\"9876543218\",\"designation\":\"Digital Marketing Specialist\",\"salary\":62000,\"dateOfJoining\":\"2024-01-28\",\"departmentId\":5 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 19",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Aditya\",\"lastName\":\"Mehta\",\"email\":\"aditya.mehta@example.com\",\"phoneNumber\":\"9876543219\",\"designation\":\"SEO Specialist\",\"salary\":55000,\"dateOfJoining\":\"2023-09-11\",\"departmentId\":5 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+},
+{
+"name": "Add Employee 20",
+"request": {
+"method": "POST",
+"header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+"mode": "raw",
+"raw": "{ \"firstName\":\"Kavya\",\"lastName\":\"Menon\",\"email\":\"kavya.menon@example.com\",\"phoneNumber\":\"9876543220\",\"designation\":\"Marketing Manager\",\"salary\":90000,\"dateOfJoining\":\"2022-05-15\",\"departmentId\":5 }"
+},
+"url": "{{baseUrl}}/api/employees"
+}
+}
